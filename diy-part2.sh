@@ -14,9 +14,9 @@ sed -i 's/ +libopenssl-legacy//g' feeds/helloworld/shadowsocksr-libev/Makefile
 rm -rf feeds/luci/applications/luci-app-smartdns
 rm -rf feeds/packages/net/smartdns
 #./feeds/packages/net/smartdns
-git clone https://github.com/pymumu/openwrt-smartdns smartdns
+git clone https://github.com/pymumu/openwrt-smartdns feeds/packages/net/smartdns
 #feeds/luci/applications/luci-app-smartdns/
-git clone https://github.com/pymumu/luci-app-smartdns
+git clone https://github.com/pymumu/luci-app-smartdns feeds/luci/applications/luci-app-smartdns/
 
 rm -rf feeds/packages/net/xray-core
 rm -rf feeds/luci/applications/luci-app-passwall
