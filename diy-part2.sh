@@ -22,7 +22,7 @@ rm -rf feeds/packages/net/xray-core
 rm -rf feeds/luci/applications/luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall/packages
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall/luci
-rm -rf feeds/luci/applications/luci-app-ssr-plus
+rm -rf feeds/package/helloworld
 git clone https://github.com/fw876/helloworld.git -b master package/helloworld
 
 rm -rf feeds/packages/lang/golang
