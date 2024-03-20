@@ -20,7 +20,7 @@ git clone https://github.com/pymumu/openwrt-smartdns feeds/packages/net/smartdns
 #feeds/luci/applications/luci-app-smartdns/
 git clone https://github.com/pymumu/luci-app-smartdns.git -b lede feeds/luci/applications/luci-app-smartdns/
 
-#rm -rf feeds/packages/net/xray-core
+rm -rf feeds/packages/net/xray-core
 rm -rf feeds/luci/applications/luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall/packages
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b  luci-smartdns-dev package/passwall/luci
