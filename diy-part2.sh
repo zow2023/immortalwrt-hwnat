@@ -11,19 +11,20 @@
 #
 sed -i 's/ +libopenssl-legacy//g' feeds/helloworld/shadowsocksr-libev/Makefile
 
+rm -rf feeds/packages/net/{alist,adguardhome,xray*,v2ray*,v2ray*,sing*,smartdns}
 rm -rf feeds/luci/applications/luci-app-smartdns
-rm -rf feeds/packages/net/smartdns
+#rm -rf feeds/packages/net/smartdns
 #./feeds/packages/net/smartdns
-git clone https://github.com/pymumu/openwrt-smartdns feeds/packages/net/smartdns
+#git clone https://github.com/pymumu/openwrt-smartdns feeds/packages/net/smartdns
 #feeds/luci/applications/luci-app-smartdns/
-git clone https://github.com/pymumu/luci-app-smartdns.git -b lede feeds/luci/applications/luci-app-smartdns/
+#git clone https://github.com/pymumu/luci-app-smartdns.git -b lede feeds/luci/applications/luci-app-smartdns/
 
-rm -rf feeds/packages/net/xray-core
+#rm -rf feeds/packages/net/xray-core
 rm -rf feeds/luci/applications/luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall/packages
 git clone https://github.com/xiaorouji/openwrt-passwall.git -b  luci-smartdns-dev package/passwall/luci
 rm -rf feeds/package/helloworld
-git clone https://github.com/fw876/helloworld.git -b master package/helloworld
+#git clone https://github.com/fw876/helloworld.git -b master package/helloworld
 
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
