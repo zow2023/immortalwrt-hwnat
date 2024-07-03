@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/zow2023/immortalwrtARM 
+  REPO_URL: https://github.com/zow2023/immortalwrtARM
   REPO_BRANCH: mt7622
   FEEDS_CONF: feeds.conf.default 
   CONFIG_FILE: 8450.config 
