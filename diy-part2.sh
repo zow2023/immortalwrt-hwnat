@@ -15,7 +15,6 @@ sed -i 's/ +libopenssl-legacy//g' feeds/helloworld/shadowsocksr-libev/Makefile
 
 rm -rf feeds/luci/applications/luci-app-smartdns
 rm -rf feeds/packages/net/smartdns
-
 git clone https://github.com/pymumu/openwrt-smartdns feeds/packages/net/smartdns
 
 git clone https://github.com/pymumu/luci-app-smartdns.git -b lede feeds/luci/applications/luci-app-smartdns/
@@ -28,8 +27,8 @@ rm -rf feeds/luci/applications/luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall/luci
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall/packages
 #git clone https://github.com/xiaorouji/openwrt-passwall.git -b  luci-smartdns-dev package/passwall/luci
-rm -rf feeds/package/helloworld
-git clone https://github.com/fw876/helloworld.git -b master package/helloworld
+#rm -rf feeds/package/helloworld
+#git clone https://github.com/fw876/helloworld.git -b master package/helloworld
 
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
@@ -42,4 +41,4 @@ git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 # Modify default IP
 sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 # Modify hostname
-sed -i 's/OpenWrt/E8100V2/g' package/base-files/files/bin/config_generate
+sed -i 's/ImmortalWrt/E8100V2/g' package/base-files/files/bin/config_generate
