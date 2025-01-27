@@ -14,16 +14,17 @@
 rm -rf feeds/packages/net/{alist,adguardhome,xray*,v2ray*,v2ray*,sing*,smartdns}
 
 rm -rf feeds/luci/applications/luci-app-smartdns
-# rm -rf feeds/packages/net/smartdns
+
 git clone https://github.com/pymumu/openwrt-smartdns feeds/packages/net/smartdns
 git clone https://github.com/pymumu/luci-app-smartdns.git -b lede feeds/luci/applications/luci-app-smartdns/
 
 # git clone https://github.com/kingyond/luci-app-accesscontrol-plus package/luci-app-accesscontrol-plus
 git clone https://github.com/sirpdboy/luci-app-parentcontrol package/luci-app-parentcontrol
-rm -rf feeds/packages/net/xray-core
+# rm -rf feeds/packages/net/xray-core
 rm -rf feeds/packages/net/chinadns-ng
 rm -rf feeds/luci/applications/luci-app-passwall
 
+git clone https://github.com/xiaoxiao29/luci-app-adguardhome package/luci-app-adguardhome
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/passwall/luci
 git clone https://github.com/xiaorouji/openwrt-passwall-packages.git package/passwall/packages
 #git clone https://github.com/xiaorouji/openwrt-passwall.git -b  luci-smartdns-dev package/passwall/luci
