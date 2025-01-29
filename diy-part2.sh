@@ -40,5 +40,5 @@ git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 # Modify default IP
 sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 # Modify hostname
-#sed -i 's/ImmortalWrt/LINKSYS-WRT/g' package/base-files/files/bin/config_generate
-sed -i 's/ImmortalWrt/R3G-WRT/g' package/base-files/files/bin/config_generate
+sed -i 's/ImmortalWrt/LINKSYS-WRT/g' package/base-files/files/bin/config_generate
+#sed -i 's/ImmortalWrt/R3G-WRT/g' package/base-files/files/bin/config_generate
